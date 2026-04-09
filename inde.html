@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doação de Sangue</title>
+</head>
+
+<body>
+    <header>
+        <div class="pirin">
+            <h1>Portal de Doação de Sangue</h1>
+            <p>Doe sangue para quem precisa!</p>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="formulario-section">
+            <h2>Cadastro de Interessados</h2>
+            <form id="formDoador">
+                <input type="text" id="nome" placeholder="Nome Completo" required>
+                <input type="email" id="email" placeholder="email" required>
+
+                <div class="row">
+                    <input type="number" id="idade" placeholder="idade" required>
+                    <input type="number" id="peso" placeholder="Peso (kg)" required>
+                </div>
+
+                <select id="tipoSanguineo" required>
+                    <option value="">Selecione o Tipo Sanguíneo</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+
+                </select>
+
+                <input type="text" id="telefone" placeholder="telefone (apenas números)" required>
+
+                <input type="text" id="cidade" placeholder="Cidade" required>
+                <input type="text" id="estado" placeholder="estado" required>
+
+                <button type="submit">Enviar Cadastro</button>
+            </form>
+        </section>
+
+        <section id="resultado" class="lista-section">
+            <h3>Doadores Registrados (Console e Tela)</h3>
+            <ul id="listaDoadores"></ul>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <p>Sistema de Captação de Doadores</p>
+
+
+    </footer>
+
+
+</body>
+
+</html>
