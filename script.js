@@ -27,8 +27,10 @@ form.addEventListener('submit', function (event) {
         alert("O peso minimo para doação é 50kg");
     }
 
-    if (/^\d+$/.test(telefone)) {
-        alert("O telefone deve conter apenas numeros")
+    const telefoneApenasNumeros = telefone.replace(/\D/g, '');
+
+    if (telefoneApenasNumeros.length === 0) {
+        alert("Por favor, insira um telefone válido com números.");
         return;
     }
 
@@ -38,7 +40,7 @@ form.addEventListener('submit', function (event) {
         idade: idade,
         peso: peso,
         tipoSanguineo: tipoSanguineo,
-        telefone: telefone,
+        telefone: telefoneApenasNumeros,
         cidade: cidade,
         estado: estado,
     };
