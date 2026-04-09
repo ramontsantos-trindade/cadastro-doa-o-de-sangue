@@ -4,7 +4,7 @@ const form = document.getElementById('formDoador');
 const listaExibicao = document.getElementById('listaDoeadores');
 
 form.addEventListener('submit', function (event) {
-    event.preventDefault(); // Evita que a página recarregue
+    event.preventDefault();
 
     const nome = document.getElementById('nome').value;
     const email = document.getElementById('email').value;
